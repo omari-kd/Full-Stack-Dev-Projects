@@ -8,6 +8,7 @@ A collection of full-stack development projects showcasing various technologies 
 | -------------------------------------------------------- | ---------------- | ----------------------------------------- | ------ | ----------------------------------------------- |
 | [node-swagger-api-beginner](./node-swagger-api-beginner) | API - Beginner   | Node.js, Express, Swagger                 | Active | [README](./node-swagger-api-beginner/README.md) |
 | [production-api](./production-api)                       | API - Production | Node.js, Express, Prisma, JWT, PostgreSQL | Active | [README](./production-api/README.md)            |
+| [production-api-mongodb](./production-api-mongodb)       | API - Production | Node.js, Express, MongoDB, Mongoose, JWT  | Active | [README](./production-api-mongodb/README.md)    |
 
 ---
 
@@ -34,6 +35,7 @@ npm run dev
 Full-Stack-Dev/
 ├── node-swagger-api-beginner/     # REST API - Basic concepts
 ├── production-api/                # REST API - Production-ready
+├── production-api-mongodb/        # REST API - MongoDB-based production implementation
 └── README.md                      # This file
 ```
 
