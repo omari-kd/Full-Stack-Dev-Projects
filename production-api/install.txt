@@ -1,0 +1,33 @@
+Initialise the project:
+npm init-y
+
+Install main dependencies:
+npm install express cors dotenv bcrypt jsonwebtoken swagger-ui-express swagger-jsdoc @prisma/client
+
+Install development dependencies:
+npm install --save-dev nodemon prisma
+
+Initialise prisma
+npx prisma init
+
+Initialized Prisma in your project
+
+  prisma/
+    schema.prisma
+  prisma.config.ts
+  .env
+  .gitignore
+
+Next, choose how you want to set up your database:
+CONNECT EXISTING DATABASE:
+  1. Configure your DATABASE_URL in prisma.config.ts
+  2. Run prisma db pull to introspect your database.
+CREATE NEW DATABASE:
+  Local: npx prisma dev (runs Postgres locally in your terminal)
+  Cloud: npx create-db (creates a free Prisma Postgres database)
+
+Then, define your models in prisma/schema.prisma and run prisma migrate dev to apply your schema.
+Learn more: https://pris.ly/getting-started
+
+Run Migration
+npx prisma migrate dev --name init
