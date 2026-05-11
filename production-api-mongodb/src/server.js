@@ -12,6 +12,8 @@ const swaggerSpec = require("./swagger/swagger");
 
 const userRoutes = require("./routes/userRoutes");
 
+const productRoutes = require("./routes/productRoutes");
+
 const errorMiddleware = require("./middleware/errorMiddleware");
 
 connectDB();
@@ -27,6 +29,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/users", userRoutes);
+
+app.use("/api/products", productRoutes);
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
